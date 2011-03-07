@@ -2,7 +2,7 @@ package no.arktekk.training.spring.repository.impl;
 
 import no.arktekk.training.spring.domain.Auction;
 import no.arktekk.training.spring.repository.AuctionRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +11,7 @@ import java.util.List;
 /**
  * @author <a href="mailto:kaare.nilsen@arktekk.no">Kaare Nilsen</a>
  */
+@Component
 public class StubAuctionRepository implements AuctionRepository {
 
     private List<Auction> auctions = new ArrayList<Auction>();
